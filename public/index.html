@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agendar horário</title>
+  <meta name="description" content="Agende seu horário online.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📅</text></svg>">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="pub-hero">
+    <div class="wrap">
+      <div class="logo" id="logo">·</div>
+      <div>
+        <h1 id="biz-name">Carregando…</h1>
+        <p id="biz-tagline"></p>
+        <div class="meta" id="biz-meta"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="pub-main">
+    <div id="mine"></div>
+    <section class="card panel" id="app" aria-live="polite"></section>
+  </main>
+  <p class="footer">Agendamento online por <strong>Marcaí</strong></p>
+
+  <div id="toast" role="status"></div>
+  <script src="/common.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
