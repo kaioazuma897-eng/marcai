@@ -6,6 +6,28 @@ Sistema de agendamento completo para **salão, barbearia, clínica ou oficina**:
 - **Um banco em arquivo** (`data/marcai.db`): backup é copiar um arquivo.
 - **Modelos prontos** para 4 segmentos, com dados de demonstração para apresentar a clientes.
 
+![Agenda do dia no painel, em colunas por profissional](docs/painel-agenda.png)
+
+## Telas
+
+**O cliente agenda pelo celular**: escolhe o serviço, o dia e o horário livre, e informa nome e WhatsApp.
+
+<table>
+  <tr>
+    <td><img src="docs/cliente-servicos.png" alt="Escolha do serviço" width="260"></td>
+    <td><img src="docs/cliente-horarios.png" alt="Escolha do dia e horário" width="260"></td>
+    <td><img src="docs/cliente-dados.png" alt="Dados do cliente e confirmação" width="260"></td>
+  </tr>
+</table>
+
+**O dono acompanha tudo no painel**: resumo do negócio, detalhes de cada atendimento e histórico dos clientes.
+
+![Início do painel com faturamento, faltas e próximos 7 dias](docs/painel-inicio.png)
+
+![Detalhes de um agendamento com ações de concluir, faltou, remarcar e cancelar](docs/painel-detalhes.png)
+
+![Lista de clientes com atendimentos, faltas e total gasto](docs/painel-clientes.png)
+
 ## Funcionalidades
 
 **Página do cliente** (`/`)
@@ -91,6 +113,7 @@ src/seed.js          Modelos por segmento e dados de demonstração
 src/time.js          Datas no fuso do negócio, independente do fuso do servidor
 public/              Página do cliente (index.html, app.js) e painel (admin.html, admin.js)
 test/                Testes da lógica de agenda (node --test)
+scripts/screenshots.js  Gera os prints de docs/ com Chrome/Edge headless (servidor precisa estar rodando)
 ```
 
 **Decisões que valem a pena explicar numa entrevista**
